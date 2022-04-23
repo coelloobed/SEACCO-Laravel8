@@ -23,6 +23,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/solicitud', function () {
     return view('so_empleo');
 });
