@@ -12,7 +12,7 @@
     <div class="container mt-3">
         <h3>Administrar Oficina</h3> <br>  
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-            Editar
+            Edita
         </button>
     </div>
 
