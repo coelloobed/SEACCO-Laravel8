@@ -100,6 +100,7 @@
           <tr>
         <th>ID</th>
         <th>ROL</th>
+        <th>IMAGEN</th>
         <th>NOMBRE COMPLETO</th>
         <th>NUMERO IDENTIDAD</th>
         <th>PROFESION</th>
@@ -109,6 +110,7 @@
         <th>CEL. DE REFERENCIA</th>
         <th>EXPERIENCIA LABORAL</th>
         <th>CORREO</th>
+        <th>CURRICULÚM</th>
         <th>ACCIONES</th>
       </tr>
           </thead>
@@ -116,6 +118,7 @@
               <tr>
         <td>1</td>
         <td>Administrador</td>
+        <td><img src="https://www.w3schools.com/w3images/team2.jpg" alt="" width="100px" height="70px"></td>
         <td>ROGER EDGARDO</td>
         <td>0801-1993-02592</td>
         <td>LIC. ADMINISTARCION</td>
@@ -125,6 +128,7 @@
         <td>8965-4732</td>
         <td>5 AÑOS COMO GERENTE</td>
         <td>ROGER@GMAILCOM</td>
+        <td>pdf</td>
         <td> <button type="button" class="btn btn-warning">Editar</button>
 			 <button type="button" class="btn btn-danger">Eliminar</button> </td>
       </tr>      

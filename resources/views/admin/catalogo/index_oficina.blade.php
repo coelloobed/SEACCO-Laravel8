@@ -66,7 +66,7 @@
                  <tr>
                         <td>1</td>
                         <td><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt=""></td>
-                        <td>seacco es una</td>
+                        <td>seacco es</td>
                         
                  </tr>        
                </tbody>        

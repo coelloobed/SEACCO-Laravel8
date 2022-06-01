@@ -301,23 +301,23 @@ return [
             'submenu' =>[
 
                 [
-                'text' => 'Hogar',
+                'text' => 'Bienvenida',
                 'url'  => 'cat/hogar',
                 'icon' => '',
                 ],
 
                 [
 
-                    'text' => 'Comercio',
+                    'text' => 'Portafolio',
                     'url'  => 'cat/comerc',
                     'icon' => '',
                 ],
 
                 [
 
-                    'text' => 'Oficina',
-                    'url'  => 'cat/ofic',
-                    'icon' => '',
+                    // 'text' => 'Oficina',
+                    // 'url'  => 'cat/ofic',
+                    // 'icon' => '',
                 ],
             ], 
         ],

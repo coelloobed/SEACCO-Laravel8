@@ -113,16 +113,37 @@
                             <th>Nombre</th>
                             <th>Descripción</th>
                             <th>Dirección</th>
+                            <th>Estado</th>
                             <th>Fecha de inicio</th>
-                            <th>Fecha Final</th>                            
+                            <th>Fecha Final</th>  
+                            <th>Acciones</th>                        
                             </tr>
                             <tr>
                             <td>1</td>
                             <td>CASA</td>
                             <td>CASA desc</td>
                             <td>Tatumbla</td>
+                            <td>Estudio de tierra</td>
                             <td>8/01/2022</td>
                             <td>8/07/2022</td>
+                            <td>
+                            <form action="" method="post">               
+                            <button  value="Seleccionar" name="accion" 
+                                    class="btn btn-warning" data-id="19">
+                                    <i class="fa fa-pencil"></i>
+                                    Editar
+                                </button>
+                              
+                                
+                                <button  value="btnEliminar" name="accion" 
+                                    onclick="return confirm('¿Quieres eliminar este dato?')"
+                                    type="submit" class="btn btn-danger " data-id="19">
+                                    <i class="fa fa-times fa fa-white"></i>
+                                    Eliminar
+                                </button>
+                    
+                            </form> 
+                            </td>
                             </tr>
                             </table>
                          </td>                       
