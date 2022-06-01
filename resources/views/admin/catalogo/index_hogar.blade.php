@@ -8,9 +8,27 @@
 
 @section('content')
 
-        <!-- Inicio de modal de agregar -->
+<h3>Administrar Bienvenida</h3> <br> 
+       
+        <!-- Inicio de la tabla -->
+      <div class="container" style="margin-top: 10px;padding: 5px">
+         <table id="tablax" class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                <th>ID</th>
+                <th>Imagenes</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+                </tr>
+              </thead>
+                  <tbody id="myTable">
+                     <tr>
+                            <td>1</td>
+                            <td><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt=""></td>
+                            <td>seacco es una</td>
+                            <td> <!-- Inicio de modal de agregar -->
         <div class="container mt-3">
-            <h3>Administrar Hogar</h3> <br>  
+             
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
                 Editar
             </button>
@@ -50,24 +68,7 @@
          </div>
        </div>
      </div>
-    <!-- Fin  de modal de agregar --> <br>
-        <!-- Inicio de la tabla -->
-      <div class="container" style="margin-top: 10px;padding: 5px">
-         <table id="tablax" class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                <th>ID</th>
-                <th>Imagenes</th>
-                <th>Descripción</th>
-                
-                </tr>
-              </thead>
-                  <tbody id="myTable">
-                     <tr>
-                            <td>1</td>
-                            <td><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt=""></td>
-                            <td>seacco es una</td>
-                            
+    <!-- Fin  de modal de agregar --> <br></td>
                      </tr>        
                    </tbody>        
          </table>
