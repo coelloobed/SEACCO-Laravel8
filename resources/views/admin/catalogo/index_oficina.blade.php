@@ -12,7 +12,7 @@
     <div class="container mt-3">
         <h3>Administrar Oficina</h3> <br>  
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-            Edita
+            Editar
         </button>
     </div>
 
@@ -66,7 +66,7 @@
                  <tr>
                         <td>1</td>
                         <td><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt=""></td>
-                        <td>seacco es una</td>
+                        <td>seacco es</td>
                         
                  </tr>        
                </tbody>        
