@@ -1,85 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <title>Cotizar</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-</style>
-</head>
-<body class="w3-light-grey">
-<!-- inicio navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="http://127.0.0.1:8000/" class="w3-bar-item w3-button w3-wide"><i class="fa fa-home"></i>Inicio</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="http://127.0.0.1:8000/solicitud" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Solicitud empleo</a>
-      <a href="http://127.0.0.1:8000/cotizaciones" class="w3-bar-item w3-button"><i class="fa fa-list-alt"></i> Cotizar</a>
-      <a href="http://127.0.0.1:8000/portafolio" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Portafolio</a>
-     
-      
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+
+</head>
+<body style="background-color:rgb(230, 243, 243);
+background-image: url('vendor/adminlte/dist/img/banner3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;"
+>
+
+
+<!-- Navbar (sit on top) -->
+
+
+<div style="background-color:rgb(230, 243, 243);"  class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
+    
+    <a href="http://127.0.0.1:8000/" class="w3-bar-item w3-button">INICIO</a>
+    
+    {{-- <a href="http://127.0.0.1:8000/login" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Administradores</a> --}}
+    <a href="http://127.0.0.1:8000/solicitud" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Solicitar empleo</a>
+    <a href="http://127.0.0.1:8000/cotizaciones" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>Cotizar proyectos</a>
+    {{-- <a href="#about" class="w3-bar-item w3-button w3-hide-small"></i> Hogar</a> --}}
+    {{-- <a href="#about" class="w3-bar-item w3-button w3-hide-small"></i> Oficina</a> --}}
+    <a href="http://127.0.0.1:8000/portafolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portafolio</a>
+    
+    
+ 
   </div>
+  
+  <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        {{-- <a href="http://127.0.0.1:8000/login" class="w3-bar-item w3-button" onclick="toggleFunction()">Administradores</a> --}}
+        <a href="http://127.0.0.1:8000/solicitud" class="w3-bar-item w3-button" onclick="toggleFunction()">Solicitar empleo</a>
+        <a href="http://127.0.0.1:8000/cotizaciones" class="w3-bar-item w3-button" onclick="toggleFunction()">Cotizar proyectos</a>
+        {{-- <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Hogar</a> --}}
+        {{-- <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Oficina</a> --}}
+        <a href="http://127.0.0.1:8000/portafolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portafolio</a>
+ 
+   
+    </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> X</a>
-  <a href="http://127.0.0.1:8000/solicitud" onclick="w3_close()" class="w3-bar-item w3-button">Solicitud empleo</a>
-  <a href="http://127.0.0.1:8000/cotizaciones" onclick="w3_close()" class="w3-bar-item w3-button">Cotizar</a>
-  <a href="http://127.0.0.1:8000/portafolio" onclick="w3_close()" class="w3-bar-item w3-button">Portafolio</a>
- 
-  
-</nav>
-<!-- fin navbar -->
+<!-- First Parallax Image with Logo Text -->
 
-<!-- Header -->
+  <!-- contenido -->
+  <br><br>
 
-  <img class="w3-image" src="https://www.w3schools.com/w3images/hotel.jpg" alt="The Hotel" style="min-width:100%" width="100%" height="100%">
-  <div class="w3-display-left w3-padding w3-col l6 m8">
- <br>
-    <div class="w3-container w3-blue">
-     <center> <h2></i>Cotizar Proyectos</h2></center>
-    </div>
-    <div class="w3-container w3-white w3-padding-16">
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px;">
-          <div class="w3-half w3-margin-bottom">
-            <label for="">Nombre Completo</label>
-            <input type="text" class="w3-input w3-border" placeholder="Ingre su nombre">
-          </div>
-          <div class="w3-half">
-            <label for="">Numero telefono</label>
-            <input type="number" class="w3-input w3-border" placeholder="Ingre su numero">
-          </div>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div style="background-color:rgb(216, 247, 233);" class="modal-header">
+         <h2>Cotizar Proyectos</h2>
         </div>
-        <div class="w3-row-padding" style="margin:8px -16px;">
-          <div class="w3-half w3-margin-bottom">
-            <label for="">Correo</label>
-            <input type="text" class="w3-input w3-border" placeholder="Opcional Ingrese su correo" name="email">
-          </div>
-          <div class="w3-half">
-            <label for="">Proyecto</label>
-             <select name="txtMetodo_Compra" class="w3-input w3-border" required="true">
+
+      <!-- Modal body -->
+      <div class="modal-body" style="background-color:rgb(230, 243, 243);">
+          <form>
+    <label for="">Nombre Completo</label>
+    <input type="text" class="form-control " placeholder="Ingre su nombre">
+    <br>
+    <label for="">Numero telefono</label>
+    <input type="number" class="form-control " placeholder="Ingre su numero">
+    <br>
+    <label for="">Correo</label>
+    <input type="text" class="form-control" placeholder="Opcional Ingrese su correo" name="email">
+    <br>
+    <label for="">Proyecto</label>
+	     <select name="txtMetodo_Compra" class="form-control" required="true">
 	    <option  value="">Seleccione el proyecto a cotizar</option>
         <option  value="">AVALÚOS</option>
         <option  value="">TOPOGRAFÍA</option>
@@ -92,32 +96,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <option  value="">CONSULTORÍAS CIVILES</option>  
         <option  value="">CONSULTORÍAS AMBIENTALES EN PROYECTOS CIVILES</option> 
         <option  value="">Otro</option> 
-       </select>
-            
-             </div>
-             <div class="w3-row-padding" style="margin:8px -16px;">
-          <div class="w3-half w3-margin-bottom">
-            <label for="">Especificar</label>
-           <input type="text" class="w3-input w3-border" placeholder="Especifique el proyecto"> 
-          </div>
-          <div class="w3-half">
-            <label for="">Lugar de proyecto</label>
-           <input type="text" class="w3-input w3-border" placeholder="Especifique el lugar del proyecto">  
-           <br>
-         
-           <a href="http://127.0.0.1:8000/" class="btn btn-primary" onclick="return confirm('¿Quieres enviar la cotización?')">Enviar la Cotización</a>
-       <a href="http://127.0.0.1:8000/" class="btn btn-danger" onclick="return confirm('¿Quieres cancelar la cotización?')">Cancelar</a>
-             </div>
-            
-            
-        </div>
+       </select><br> 
+       <label for="">Especificar</label>
+       <input type="text" class="form-control " placeholder="Especifique el proyecto"> <br>
+       <label for="">Lugar de proyecto</label>
+       <input type="text" class="form-control " placeholder="Especifique el lugar del proyecto">        
+       
+  </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div style="background-color:rgb(230, 243, 243);" class="modal-footer">
         
-      </form>
+       <a href="http://127.0.0.1:8000/" class="btn btn-primary" onclick="return confirm('¿Quieres enviar la cotización?')">Enviar la Cotización</a>
+       <a href="http://127.0.0.1:8000/" class="btn btn-danger" onclick="return confirm('¿Quieres cancelar la cotización?')">Cancelar</a>
+        
+      </div>
+
     </div>
   </div>
 
-
-
+  <!-- fin contenido -->
 
 <script>
 // Modal Image Gallery
@@ -128,21 +127,25 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
 }
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
 </script>
 

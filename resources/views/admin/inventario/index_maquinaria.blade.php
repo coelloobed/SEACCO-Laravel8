@@ -29,82 +29,41 @@
 
         <!-- Cuerpo del modal Modal -->
         <div class="modal-body">
-
-          <!-- inicio  -->
-       <div class="container mt-3">
-         
-          <form>
-             <div class="row">
-                 <div class="col">
-                 <label for="">ITEM</label>
-                   <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
-                 </div>
-                 <div class="col">
-                 <label for="">Categoria de Material</label>
-                    <select name="txtMetodo_Compra" class="form-control" required="true">
-                    <option  value="">Seleccione Tipo Articulo</option>
-                    <option  value="">Motor</option>
-                    <option  value="">Electrico</option>
-                    <option  value="">ETC</option>       
-                   </select>
-                 </div>
-             </div>
-         </form>
-        </div>
-        
-        <!-- fin fin -->    
+        <label for="">ITEM</label>
+        <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
         <br>
+        <label for="">Categoria de Material</label>
+	     <select name="txtMetodo_Compra" class="form-control" required="true">
+	    <option  value="">Seleccione Tipo Articulo</option>
+        <option  value="">Motor</option>
+        <option  value="">Electrico</option>
+        <option  value="">ETC</option>       
+       </select><br>
         <label for="">Nombre</label>
         <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
         <br>
-          
-
-         <!-- inicio  -->
-       <div class="container mt-3">         
-         <form>
-            <div class="row">
-                <div class="col">
-                <label for="">Descripción del modelo</label>
+        <label for="">Descripción del modelo</label>
         <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
-                </div>
-                <div class="col">
-                <label for="">Estado del Equipo</label>
-                    <select name="txtMetodo_Compra" class="form-control" required="true">
-                    <option  value="">Seleccione el estado</option>
-                    <option  value="">Dar Mantenimiento</option>
-                    <option  value="">Reparado por garantia</option>
-                    <option  value="">En uso</option>
-                    <option  value="">Disponible</option>
-                    <option  value="">Dañado</option>       
-                    </select>
-                </div>
-            </div>
-        </form>
-       </div>
-       <!-- fin fin -->
-
-         <!-- inicio  -->
-         <div class="container mt-3">         
-         <form>
-            <div class="row">
-                <div class="col">
-                <label for="">Garantia</label>
-                    <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
-                </div>
-                <div class="col">
-                <label for="">Proyecto</label>
-                    <select name="txtMetodo_Compra" class="form-control" required="true">
-                    <option  value="">Seleccione el Proyecto</option>
-                    <option  value="">Agua Caliente</option>
-                    <option  value="">Valle</option>
-                    <option  value="">Santa Ana</option>       
-                    </select>
-                </div>
-            </div>
-        </form>
-       </div>
-       <!-- fin fin -->
-       <br>
+        <br>
+        <label for="">Estado del Equipo</label>
+	     <select name="txtMetodo_Compra" class="form-control" required="true">
+	    <option  value="">Seleccione el estado</option>
+        <option  value="">Dar Mantenimiento</option>
+        <option  value="">Reparado por garantia</option>
+        <option  value="">En uso</option>
+        <option  value="">Disponible</option>
+        <option  value="">Dañado</option>       
+       </select><br>
+        <label for="">Garantia</label>
+        <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
+        <br>
+        <label for="">Proyecto</label>
+	     <select name="txtMetodo_Compra" class="form-control" required="true">
+	    <option  value="">Seleccione el Proyecto</option>
+        <option  value="">Agua Caliente</option>
+        <option  value="">Valle</option>
+        <option  value="">Santa Ana</option>       
+       </select><br>
        <label for="">Asignado</label>
 	     <select name="txtMetodo_Compra" class="form-control" required="true">
 	    <option  value="">Asignar</option>
@@ -112,23 +71,11 @@
         <option  value="">David</option>
         <option  value="">Samuel</option>       
        </select><br>
-        <!-- inicio  -->
-         <div class="container mt-3">         
-         <form>
-            <div class="row">
-                <div class="col">
-                <label for="">Lugar compra</label>
-                  <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
-                </div>
-                <div class="col">
-                <label for="">Precio</label>
-                   <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
-                </div>
-            </div>
-        </form>
-       </div>
-       <!-- fin fin -->
-             
+       <label for="">Lugar compra</label>
+        <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
+        <br>
+        <label for="">Precio</label>
+        <input type="text" class="form-control" name="txtPrecio_Compra" required value="" placeholder="" id="txtPrecio_Compra"   >
         <br>
         <label for="">Fecha Compra</label>
         <input type="Date" class="form-control" name="txtfecha_nacimiento" required value="" placeholder="" id="txtfecha_nacimiento" require="">
