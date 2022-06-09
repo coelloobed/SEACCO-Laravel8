@@ -41,8 +41,10 @@
                 @csrf
                     {{-- Logo seacco --}}
                     <center><img src='vendor/adminlte/dist/img/seacco.jpg' class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of Me" width="150" height="150"></center>
-                     <body oncontextmenu="return false">
-                       
+                    
+                    <!-- inicio oculta el codigo fuente de la pagina -->
+                    <body oncontextmenu="return false">
+                     <!-- Fin oculta el codigo fuente de la pagina -->  
        
                 <div class="mb-3">
                     <x-jet-label value="{{ __('Usuario') }}" />
