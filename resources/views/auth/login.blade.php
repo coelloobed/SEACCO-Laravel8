@@ -44,7 +44,7 @@
                     
                     <!-- inicio oculta el codigo fuente de la pagina -->
                     <body oncontextmenu="return false">
-                     <!-- Fin oculta el codigo fuente de la pagina -->  
+                     <!-- Fin oculta el codigo fuente de la paginas -->  
        
                 <div class="mb-3">
                     <x-jet-label value="{{ __('Usuario') }}" />
