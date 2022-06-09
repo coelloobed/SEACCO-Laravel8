@@ -10,6 +10,10 @@
             <form method="POST" action="{{ route('register') }}">
                 @csrf
 
+                <!-- inicio oculta el codigo fuente de la pagina -->
+                <body oncontextmenu="return false">
+                <!-- Fin oculta el codigo fuente de la pagina --> 
+
                 <div class="mb-3">
                     <x-jet-label value="{{ __('Nombre ') }}" />
 
@@ -21,7 +25,7 @@
                 <div class="mb-3">
                     <x-jet-label value="{{ __('Usuario') }}" />
 
-                    <x-jet-input class="{{ $errors->has('username') ? 'is-invalid' : '' }}" type="text" name="username"
+                    <x-jet-input class="{{ $errors->has('username') ? 'is-invalid' : '' }}" type="text" pattern="[A-Z]+" title="Solo mayusculas" name="username"
                                  :value="old('username')" required autofocus autocomplete="username" />
                     <x-jet-input-error for="username"></x-jet-input-error>
                 </div>
