@@ -12,7 +12,7 @@
     <div class="container mt-3">
         <h3>Administrar Oficina</h3> <br>  
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-            Edita
+            Editar
         </button>
     </div>
 
@@ -23,7 +23,7 @@
 
         <!-- Encabezado del modal -->
         <div class="modal-header">
-            <h4 class="modal-title">Editar Oficina</h4>
+            <h4 class="modal-title">Editar Oficinas</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <!-- Fin Encabezado del modal -->
@@ -66,7 +66,7 @@
                  <tr>
                         <td>1</td>
                         <td><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt=""></td>
-                        <td>seacco es una</td>
+                        <td>seacco es</td>
                         
                  </tr>        
                </tbody>        
