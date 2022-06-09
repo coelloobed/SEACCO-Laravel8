@@ -41,13 +41,15 @@
                 @csrf
                     {{-- Logo seacco --}}
                     <center><img src='vendor/adminlte/dist/img/seacco.jpg' class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of Me" width="150" height="150"></center>
-                     <body oncontextmenu="return false">
-                       
+                     
+                    <!-- inicio oculta el codigo fuente de la pagina -->
+                    <body oncontextmenu="return false">
+                     <!-- Fin oculta el codigo fuente de la pagina -->  
        
                 <div class="mb-3">
                     <x-jet-label value="{{ __('Usuario') }}" />
 
-                    <x-jet-input class="{{ $errors->has('username') ? 'is-invalid' : '' }}" pattern="[A-Z]+" title="Solo letras mayusculas" type="text"
+                    <x-jet-input class="{{ $errors->has('username') ? 'is-invalid' : '' }}"  pattern="[A-Z]+" title="Solo letras mayusculas" type="text"
                                  name="username" :value="old('username')" required />
                     <x-jet-input-error for="username"></x-jet-input-error>
                 </div>
@@ -58,6 +60,7 @@
                     <x-jet-input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password" type="password"
                                  name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra mayúscula y minúscula, y al menos 8 o más caracteres" required autocomplete="current-password" />
                     <x-jet-input-error for="password"></x-jet-input-error>
+                    <input type="checkbox" onclick="myFunction()">Show Password
                 </div>
 
                 <div class="mb-3">
@@ -217,4 +220,16 @@ myInput.onkeyup = function() {
                 else
 			return true;
 	}
+</script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
 </script>
