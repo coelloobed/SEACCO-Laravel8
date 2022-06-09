@@ -38,10 +38,11 @@
                     <x-jet-label value="{{ __('Password') }}" />
 
                     <x-jet-input class="{{ $errors->has('password') ? 'is-invalid' : '' }}" type="password"
-                                 name="password" required autocomplete="new-password" />
+                                id="password" name="password" required autocomplete="new-password" />
                     <x-jet-input-error for="password"></x-jet-input-error>
+                    
                 </div>
-
+                <input type="checkbox" onclick="myFunction()">mostrar contraseña  
                 <div class="mb-3">
                     <x-jet-label value="{{ __('Confirm Password') }}" />
 
@@ -78,3 +79,15 @@
         </div>
     </x-jet-authentication-card>
 </x-guest-layout>
+
+<!-- para la visibilidad de contraseña -->
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
